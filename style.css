@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0e0ff; /* Light lavender background */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#next-bubble-canvas {
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+#gameCanvas {
+    border: 2px solid #333;
+    background-color: #c0c0f0; /* Slightly darker lavender for game area */
+    display: block;
+    margin: 0 auto;
+}
+
+#game-over-message {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 8px;
+}
+
+#game-over-message.hidden {
+    display: none;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #45a049;
+}
