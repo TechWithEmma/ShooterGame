@@ -20,6 +20,13 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 600px) {
+  .game-container {
+    width: 100%;
+    height: auto;
+  }
+}
+
 h1 {
   color: #333;
   margin-bottom: 10px;
