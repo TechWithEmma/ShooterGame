@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Bubble Shooter</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="game-container">
-        <h1>Getty Shooter Game</h1>
-        <div class="info-panel">
-            <span>Score: <span id="score">0</span></span>
-            <span>Next: <canvas id="next-bubble-canvas" width="30" height="30"></canvas></span>
-        </div>
-        <canvas id="gameCanvas"></canvas>
-        <div id="game-over-message" class="hidden">
-            <h2>Game Over!</h2>
-            <p>Your Score: <span id="final-score">0</span></p>
-            <button id="restart-button">Play Again</button>
-        </div>
+      <h1>Getty Shooter Game</h1>
+      <div class="info-panel">
+        <span>Score: <span id="score">0</span></span>
+        <span
+          >Next: <canvas id="next-bubble-canvas" width="30" height="30"></canvas
+        ></span>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+      <div id="game-over-message" class="hidden">
+        <h2>Game Over!</h2>
+        <p>Your Score: <span id="final-score">0</span></p>
+        <button id="restart-button">Play Again</button>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
