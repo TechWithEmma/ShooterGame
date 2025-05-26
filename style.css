@@ -12,12 +12,14 @@ body {
 
 .game-container {
   text-align: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;/* White background for better contrast */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   position: relative;
-  height: 100vh;
+  height: auto; /* Allow height to adjust based on content */
+  max-width: 600px; /* Limit the width for better appearance */
+  border: 2px solid #4a90e2; /* Blue border for emphasis */
 }
 
 @media only screen and (max-width: 480px) and (orientation: portrait) {
@@ -28,20 +30,23 @@ body {
 }
 
 h1 {
-  color: #333;
-  margin-bottom: 10px;
+  color: #4a90e2; /* Blue color for the title */
+  margin-bottom: 15px;
+  font-size: 2em; /* Increased font size */
 }
 
 .info-panel {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 1.2em;
+  color: #333; /* Darker color for better readability */
 }
 
 #next-bubble-canvas {
-  border: 1px solid #ccc;
+  border: 2px solid #4a90e2; /* Blue border for next bubble */
+  border-radius: 5px; /* Rounded corners */
   vertical-align: middle;
 }
 
@@ -53,17 +58,20 @@ h1 {
   background-size: cover;
   display: block;
   margin: 0 auto;
+  border-radius: 10px; /* Rounded corners for the game area */
 }
 
 #game-over-message {
   margin-top: 20px;
-  top: 200px;
-  width: 84%;
+  width: 90%; /* Adjust width for smaller screens */
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   border-radius: 8px;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center the game over message */
+  text-align: center; /* Center text */
 }
 
 #game-over-message.hidden {
@@ -71,16 +79,22 @@ h1 {
 }
 
 #restart-button {
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 12px 25px; /* Increased padding for better touch targets */
+  font-size: 1.1em; /* Slightly larger font size */
   cursor: pointer;
   background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Added transform for button press effect */
 }
 
 #restart-button:hover {
   background-color: #45a049;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
 }
+
+#restart-button:active{
+  transform: scale(0.95); /* Slightly shrink button on click */
+}
+  
